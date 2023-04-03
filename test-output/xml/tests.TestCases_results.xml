@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Solar1"
+           tests="4"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="39,216">
+    <properties></properties>
+
+            <testcase
+                name="glitching_user_login"
+                time="7,285"
+                classname="tests.TestCases">
+
+            <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;WIN-EV87Q1VQHF4&apos;, ip: &apos;192.169.108.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ffd588f5126cfebecafde225952c1f1, clickElement {id=391e245a-2909-4259-8765-b754974ec8b2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:9679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9679/devtool..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0ffd588f5126cfebecafde225952c1f1)] -&gt; css selector: #login-button]
+Session ID: 0ffd588f5126cfebecafde225952c1f1">
+                <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'WIN-EV87Q1VQHF4', ip: '192.169.108.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ffd588f5126cfebecafde225952c1f1, clickElement {id=391e245a-2909-4259-8765-b754974ec8b2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:9679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9679/devtool..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0ffd588f5126cfebecafde225952c1f1)] -> css selector: #login-button]
+Session ID: 0ffd588f5126cfebecafde225952c1f1
+                org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)pages.LoginPage.clickLoginBtn(LoginPage.java:24)tests.TestCases.glitching_user_login(TestCases.java:59)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)java.base/java.lang.reflect.Method.invoke(Method.java:578)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                    Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+                    org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)pages.LoginPage.clickLoginBtn(LoginPage.java:24)tests.TestCases.glitching_user_login(TestCases.java:59)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)java.base/java.lang.reflect.Method.invoke(Method.java:578)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                                    Caused by: java.net.SocketException: Connection reset
+                    java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)java.base/java.lang.Thread.run(Thread.java:1589)
+                ]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="locked_out_user_login"
+                time="8,253"
+                classname="tests.TestCases">
+
+            <failure type="java.lang.AssertionError" message="User is locked out and should not be able to log in. expected [https://qa-challenge.codesubmit.io/inventory.html] but found [https://qa-challenge.codesubmit.io/]">
+                <![CDATA[java.lang.AssertionError: User is locked out and should not be able to log in. expected [https://qa-challenge.codesubmit.io/inventory.html] but found [https://qa-challenge.codesubmit.io/]
+                org.testng.Assert.fail(Assert.java:110)org.testng.Assert.failNotEquals(Assert.java:1413)org.testng.Assert.assertEqualsImpl(Assert.java:149)org.testng.Assert.assertEquals(Assert.java:131)org.testng.Assert.assertEquals(Assert.java:655)tests.TestCases.locked_out_user_login(TestCases.java:38)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)java.base/java.lang.reflect.Method.invoke(Method.java:578)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </failure>
+    </testcase>
+
+
+            <testcase
+                name="standard_user_login"
+                time="9,349"
+                classname="tests.TestCases">
+            </testcase>
+            <testcase
+                name="problem_user_login"
+                time="14,329"
+                classname="tests.TestCases">
+            </testcase>
+</testsuite>
